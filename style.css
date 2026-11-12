@@ -1,0 +1,295 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #172b45;
+}
+
+header {
+    background-color: #14263d;
+    color: white;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    font-size: 25px;
+}
+
+header h2 span {
+    color: orange;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+section {
+    padding: 90px 8%;
+}
+
+/* BANER */
+
+.baner {
+    background-color: #14263d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    min-height: 550px;
+}
+
+.baner div {
+    width: 50%;
+}
+
+.baner h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.baner p {
+    color: #cbd5e1;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.baner a {
+    display: inline-block;
+    background-color: #ff9f1c;
+    color: #14263d;
+    padding: 16px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.baner a:hover {
+    background-color: #ffb84d;
+}
+
+.baner img {
+    width: 48%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* O NAS */
+
+.onas {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.onas img {
+    width: 48%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.onas h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.onas p {
+    color: #64748b;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* USLUGI */
+
+#uslugi {
+    text-align: center;
+}
+
+#uslugi > h2 {
+    font-size: 38px;
+    margin-bottom: 45px;
+}
+
+.uslugi {
+    display: flex;
+    gap: 25px;
+}
+
+.uslugi a {
+    width: 25%;
+    text-decoration: none;
+    color: #172b45;
+}
+
+.uslugi article {
+    background-color: white;
+    padding: 35px 25px;
+    min-height: 190px;
+    border-radius: 12px;
+    border-bottom: 4px solid transparent;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.uslugi article:hover {
+    transform: translateY(-8px);
+    border-bottom: 4px solid #ff9f1c;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.uslugi h3 {
+    font-size: 21px;
+    margin-bottom: 18px;
+}
+
+.uslugi p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* DLACZEGO MY */
+
+.dlaczego {
+    background-color: #14263d;
+    color: white;
+    text-align: center;
+}
+
+.dlaczego h2 {
+    font-size: 38px;
+    margin-bottom: 45px;
+}
+
+.zalety {
+    display: flex;
+    gap: 25px;
+}
+
+.zalety article {
+    background-color: #1c3553;
+    border: 1px solid #34465e;
+    padding: 35px;
+    width: 33%;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.zalety article:hover {
+    border-color: #ff9f1c;
+    transform: translateY(-5px);
+}
+
+.zalety h3 {
+    color: #ff9f1c;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.zalety p {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+/* KONTAKT */
+
+.kontakt {
+    background-color: white;
+    text-align: center;
+}
+
+.kontakt h2 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.kontakt p {
+    margin: 15px;
+    color: #64748b;
+}
+
+.kontakt p:first-child {
+    color: #ff9f1c;
+    font-weight: bold;
+}
+
+/* STOPKA */
+
+footer {
+    background-color: #0d1b2d;
+    color: white;
+    padding: 35px 8%;
+    text-align: center;
+}
+
+footer p {
+    color: #94a3b8;
+}
+
+/* TELEFONY */
+
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .baner, .onas, .uslugi, .zalety {
+        flex-direction: column;
+    }
+
+    .baner div, .baner img, .onas img {
+        width: 100%;
+    }
+
+    .baner h1 {
+        font-size: 38px;
+    }
+
+    .uslugi a, .zalety article {
+        width: 100%;
+    }
+
+    section {
+        padding: 60px 6%;
+    }
+
+    .onas h2, .kontakt h2, .dlaczego h2 {
+        font-size: 30px;
+    }
+}
